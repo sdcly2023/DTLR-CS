@@ -43,13 +43,8 @@ Then prepare the datasets in the following format for easy use of the code:
         └── Val_Folder
             ├── img
             └── labelcol
-```
-#### 1.2. Synapse Dataset
-The Synapse dataset we used is provided by TransUNet's authors.
 
 ### 2. Training
-As mentioned in the paper, we introduce two strategies 
-to optimize UCTransNet.
 
 The first step is to change the settings in ```Config.py```,
 all the configurations including learning rate, batch size and etc. are 
@@ -69,8 +64,7 @@ Our method just replaces the skip connections in U-Net,
 so the parameters in U-Net can be used as part of pretrained weights.
 
 By first training a classical U-Net using ```/nets/UNet.py``` 
-then using the pretrained weights to train the UCTransNet, 
-CTrans module can get better initial features.
+then using the pretrained weights to train the DTLR-CS.
 
 This strategy can improve the convergence speed and may 
 improve the final segmentation performance in some cases.
