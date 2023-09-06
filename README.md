@@ -14,10 +14,6 @@ Install from the ```requirements.txt``` using:
 pip install -r requirements.txt
 ```
 
-## Usage
-
-*Note: If you have some problems with the code, the [issues](https://github.com/McGregorWwww/UCTransNet/issues?q=is%3Aissue+is%3Aclosed) may help.*
-
 ### 1. Data Preparation
 #### 1.1. GlaS and MoNuSeg Datasets
 The original data can be downloaded in following links:
@@ -50,8 +46,6 @@ Then prepare the datasets in the following format for easy use of the code:
 ```
 #### 1.2. Synapse Dataset
 The Synapse dataset we used is provided by TransUNet's authors.
-Please go to [https://github.com/Beckschen/TransUNet/blob/main/datasets/README.md](https://github.com/Beckschen/TransUNet/blob/main/datasets/README.md)
-for details.
 
 ### 2. Training
 As mentioned in the paper, we introduce two strategies 
@@ -95,8 +89,6 @@ python test_model.py
 ```
 You can get the Dice and IoU scores and the visualization results. 
 
-🔥🔥 **The testing results of all classes in Synapse dataset can be downloaded through [this link](https://drive.google.com/file/d/1E-ZJLkNc0AJSUKI1CCWdcROMS9wERI9s/view?usp=sharing).** 🔥🔥
-
 
 ### 4. Reproducibility
 In our code, we carefully set the random seed and set cudnn as 'deterministic' mode to eliminate the randomness. 
@@ -133,6 +125,3 @@ If this code is helpful for your study, please cite:
 	 pages={2441-2449}}
 ```
 
-
-## Contact 
-Haonan Wang ([haonan1wang@gmail.com](haonan1wang@gmail.com))
