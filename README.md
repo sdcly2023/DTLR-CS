@@ -1,4 +1,4 @@
-# [AAAI2022] UCTransNet
+# DTLR-CS
 
 
 This repo is the official implementation of
