@@ -43,6 +43,7 @@ Then prepare the datasets in the following format for easy use of the code:
         └── Val_Folder
             ├── img
             └── labelcol
+```angular2html
 
 ### 2. Training
 
@@ -54,7 +55,6 @@ in it.
 We optimize the convolution parameters 
 in U-Net and the CTrans parameters together with a single loss.
 Run:
-```angular2html
 python train_model.py
 ```
 
